@@ -1,0 +1,16 @@
+function oddishOrEvenish(num) {
+	let result = 0;
+	let string = num.toString();
+	string = string.split("");
+	for (let i = 0; i < string.length; i++) {
+		string[i] = parseInt(string[i]);
+		result += string[i];
+	}
+	if (result % 2 === 0) {
+		return "Evenish";
+	} else {
+		return "Oddish";
+	}
+	console.log(result);
+}
+// add the digits of the given number. if the result is odd return oddish, if even return evenish
